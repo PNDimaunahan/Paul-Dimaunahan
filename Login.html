@@ -1,0 +1,190 @@
+<!-- IIT406 - Computer Programming 3 -->
+<!-- Paul Nazarene P. Dimaunahan 
+            IT Student
+	1st Semester, AY 2022-2023-->
+    
+<!-- Finals - IIT406 -->
+<!--Login Form-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+        <!--meta for the responsiveness-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--link for the stylesheets and fonts used-->
+        <link rel="stylesheet" href = "WebSiteCss.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Nerko%20One">
+        <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Oswald">
+        <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Lato"> 
+        <!-- and script for external clock and login function-->
+        <script src="Script.js"></script>
+</head>
+<!--body when onload will use the function for the clock-->
+<body onload="initClock()">
+<!--Header for the html file-->
+    <header>
+        <!--Logo-->
+        <a href='home.html' style="display:Flex;">
+            <img src="Resource_Image/Coat_Of_Arms.png">
+            <img src="Resource_Image/Fun_Ph_Logo.png">
+        </a>
+        <!--Clock-->
+        <div class="datetime">
+            <div class="date">
+                <span id="month">Month</Span>,
+                <span id="daynum">00</Span>,
+                <span id="year">Year</Span>,
+                <span id="dayname">Day</Span>
+            </div>
+            <div class="time">
+                <span id="hour">00</Span>:
+                <span id="minute">00</Span>:
+                <span id="second">00</Span>&nbsp;
+                <span id="period">AM</Span>
+            </div>
+        </div>
+    </header>
+<main>
+<!--A sidebar with a dropdown for the menu and submenu of the html--> 
+    <div class="sidebarnav">
+    <center><p style="padding: 3px;" justify-content: "center;">⚙️ Sidebar Menu</p></center>
+    <button class="dropdown-btn"> About Philippines 
+        <i class="fa fa-caret-down" aria-hidden="true"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="#">History</a>
+        <a href="#">Geography and Environment</a>
+        <a href="#">Demographics</a>
+        <a href="#">Culture</a>
+    </div>
+    <button class="dropdown-btn"> Tourist Attraction 
+        <i class="fa fa-caret-down" aria-hidden="true"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="#">Luzon</a>
+        <a href="#">Visayas</a>
+        <a href="#">Mindanao</a>
+    </div>
+        <center><a href="VideoGallery.html"><i class="fa fa-fw fa-youtube-play"></i>&nbsp; Video Gallery</a>
+        <a href="Login.html"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp; Login</a>
+        <a href="ContactUs.html"><i class="fa fa-envelope-open" aria-hidden="true"></i>&nbsp; Contact US</a></center>
+    
+    <!--A Modified built-in script for the uncollasable drop down menu (script is sourced to w3schools collasable sidebar)-->
+    <script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");  var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+      });
+    }
+    </script>
+    </div>
+    <section id="login">
+
+    <!--This is the login form body-->
+    <form id="form_id" method="post" name="loginform">
+      
+      <!--This is where the avatar rest upon-->
+      <div class="imgholder">
+          <h1>Login</h1>
+        <img src="https://png.pngtree.com/png-vector/20191009/ourmid/pngtree-user-icon-png-image_1796659.jpg" alt="Avatar" class="avatar">
+      </div>
+      
+      <!--This section is the main interaction of the html this section interact with passwords, username, and remember me-->    
+      <div class="holder">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="pw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="pw" required>
+            
+        <!--I used JS script for the logic in the login button-->
+        <!--In addition, i have changed the submit type into button to proceed to the next html-->
+        <button class="login" type="button" onclick="loginFunction()">Login</button>
+        
+        <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+      <!--This is a note for the next user to use this html. This includes the psw and uname for accessing the login button-->
+      <div class="holder" style="background-color:#f1f1f1">
+      <span><b>Note : </b>For this finals use the following username and password. <br/><b>User Name : IIT406<br/>Password : LETRAN</b></span>
+      </div>
+    </form>
+    <!--An internal Script-->
+    <script>
+
+        function loginFunction()
+        {
+             var username = document.loginform.uname.value; //to get the value of the uname into username
+             var password = document.loginform.pw.value; //to get the value of the pw into password
+
+         if (username == "IIT406" && password == "LETRAN") //due to inability to use php i have use a fixed value for the login.
+            {
+            alert("Login Successfully, Proceeding to Midterms About HTML"); //prompts the user that the login is successful
+            window.location="Past_Activity/About.html"
+            return true;
+            }
+         else
+            {
+            alert("Login Failed, Username or Password is incorrect");//prompts the user that the login is unsuccessful
+            }
+        }
+    </script>
+</section>
+</main>
+<footer>
+    <div class="footer_container">
+        <div class="footer_link">
+        <button class="menu-drop"> About Philippines <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        <div class="menu-drop-container">
+            <a href="#">History |</a>
+            <a href="#">Geography and Environment |</a>
+            <a href="#">Demographics | </a>
+            <a href="#">Culture </a>
+        </div>
+        <br>
+        <button class="menu-drop"> Tourist Attraction <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        <div class="menu-drop-container">
+            <a href="#">Luzon |</a>
+            <a href="#">Visayas |</a>
+            <a href="#">Mindanao |</a>
+        </div>
+        <br>
+        <center><a href="VideoGallery.html"><i class="fa fa-fw fa-youtube-play"></i>&nbsp; Video Gallery |</a>
+        <a href="Login.html"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp; Login |</a>
+        <a href="ContactUs.html"><i class="fa fa-envelope-open" aria-hidden="true"></i>&nbsp; Contact US</a></center>
+        <script>
+            var dropdown = document.getElementsByClassName("menu-drop");  var i;
+
+            for (i = 0; i < dropdown.length; i++) {
+                dropdown[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var dropdownContent = this.nextElementSibling;
+                    if (dropdownContent.style.display === "block") 
+                    {
+                    dropdownContent.style.display = "none";
+                    } else 
+                    {
+                        dropdownContent.style.display = "block";
+                    }
+              });
+            }
+        </script>
+        </div>
+        <center><p> Copyright @ 2022. All Rights Reserved. </p></center>
+    </footer>
+    </body>
+</html>
+
+<style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+</style>

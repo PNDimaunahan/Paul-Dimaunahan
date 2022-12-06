@@ -1,0 +1,670 @@
+*{padding: 0; margin: 0;
+  box-sizing: border-box;}
+
+#Bg_Video {
+          filter: brightness(80%);
+          object-fit: cover;
+          position: fixed;
+          min-width: 100%;
+          min-height: 100%;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          z-index: -1;
+          }
+
+body    {
+            margin:0px;
+            paddding:0px;
+            margin-top:0px;
+        }
+
+.title{
+    height:100%;
+    margin:14%;
+    }
+.title1
+    {
+    height:100%;
+    margin:10%;
+    }
+
+.datetime{
+        
+            color: black;
+            background-color:#AFE1AF;
+            font-family:oswald;
+            width: 300px;
+            font-size: 16px;
+            padding: 14px 14px;
+            border: 3px solid #023020;
+            border-radius: 6px;
+            margin-left:auto;
+         }
+
+.date{
+        font-weight: 750;
+        text-align:center;
+        letter-spacing: 2px;
+     }
+  
+.time{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-size:18px;
+        font-family:oswald;
+}
+
+.time span:not(:last-child){
+    
+    postition:relative;
+    margin: 0px;
+    font-weight: 600;
+    text-align:center;
+    letter-spacing:2px;
+}
+
+.time span:last-child{
+    postition:relative;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform:uppercase;
+    margin-top:0px;
+}
+
+div.title{
+          color: #f1f1f1;
+          width: 100vw;
+          padding: 20px;
+          position: static;
+}
+
+main{
+    margin-top: 65px;
+    margin-left: 15%;
+    margin-right: 0px;
+    width: 85%;
+    height: 100%;}
+
+header{
+        position:fixed;
+        display:flex;
+        overflow: hidden;
+        top:0px;
+        left:0px;
+        right:0px;
+        height:100px;
+        background-color:#AFE1AF;
+        padding:10px;
+        width:100%;
+        z-index: 1;
+        transition: 0.2s;
+      }
+
+h1.font{font-size:70px; font-family: nerko one;}
+h1.font2{font-size:70px; font-family: nerko one;}
+h1.font3{font-size:40px; font-family: nerko one;}
+h2.font4{text-indent:20px; font-size: 40px; font-family: nerko one;}
+
+.fonthead
+{font-size: 26px; font-family: nerko one;}
+
+blockquote{
+    font-family: lato;
+    font-size: 20px;
+}
+
+.quote2{text-indent:20px; font-size: 24px; font-family: oswald;}
+
+html {
+    background-color: #fff;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+    
+section{
+    height:100%;
+    z-index: -1;
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    align-items:center;
+    width: auto;
+    overflow: auto;
+        }
+        
+.sidebarnav {
+    margin-top: 35px;
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    background-color: #7FFFD4;
+    overflow-x: hidden;
+    padding-top: 10px;
+    font-family: oswald;
+    font-weight: bold;
+}
+
+.footer_link a{
+    overflow-x: hidden;
+    padding-top: 10px;
+    font-family: oswald;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+button.menu-drop{
+    font-family: oswald;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+    border:none;
+    display: flex;
+    justify-content: center;    
+    width: 25%;
+    margin:auto;
+    background-color: #AFE1AF;
+}
+
+.menu-drop-container{
+    display:none;
+    text-align: center;
+    background-color: #90EE90;
+}
+
+
+.sidebarnav a, .dropdown-btn{
+  padding: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  border:none;
+  background-color: #7FFFD4;
+  display: block;
+  cursor: pointer;
+  width:100%;
+  transition: 0.3s;
+}
+
+.sidebarnav a:hover, .drop-down-btn:hover {
+		background-color: #66CDAA;}
+        
+.dropdown-container{
+    display: none; 
+    text-align: center;
+}
+
+.fa-caret-down{
+    float: left;
+	padding-left: 8px;
+}
+
+#Video-Gallery table {
+		margin:10px;
+		table-layout:fixed;
+		border-collapse:collapse;}
+		
+#Video-Gallery td{
+    padding:5px;
+    border:0px;}
+                
+#History{
+    background-color: #5CDB95;
+}
+
+#History img{
+                display:block;
+                width:40%;
+                height:auto%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 50px;
+                background-color:black;
+                padding:5px;
+                border-style: solid;
+                border: 2px;
+                border-radius: 5px;
+            }
+            
+#Sizer{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255,255,255,0.75)), 
+    url("https://i0.wp.com/www.eurasiareview.com/wp-content/uploads/2020/02/b-122.jpg?fit=800%2C445&ssl=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Geography{
+    background-color: #FFFDD0;
+}
+
+#Geography img{
+                display:block;
+                width:40%;
+                height:auto%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 50px;
+                background-color:black;
+                padding:5px;
+                border-style: solid;
+                border: 2px;
+                border-radius: 5px;
+            }
+
+#Demographics{
+
+    background-color: #98FB98;
+
+}
+
+#Demographics img{
+                    display:block;
+                    width:40%;
+                    height:auto%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 50px;
+                    background-color:black;
+                    padding:5px;
+                    border-style: solid;
+                    border: 2px;
+                    border-radius: 5px;
+            }
+
+#Culture{
+    background-color:#ECFFDC;
+}
+
+#Culture img{
+                display:block;
+                width:40%;
+                height:auto%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 50px;
+                background-color:black;
+                padding:5px;
+                border-style: solid;
+                border: 2px;
+                border-radius: 5px;
+}
+
+#Luzon{
+       background-color:#C1E1C1; 
+}
+
+#Luzon img{
+            display:block;
+            width:40%;
+            height:auto%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            background-color:black;
+            padding:5px;
+            border-style: solid;
+            border: 2px;
+            border-radius: 5px;
+}
+
+#Visayas{
+       background-color: #5CDB95;
+}
+
+#Visayas img{
+            display:block;
+            width:40%;
+            height:auto%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            background-color:black;
+            padding:5px;
+            border-style: solid;
+            border: 2px;
+            border-radius: 5px;
+}
+
+#Mindanao{
+       background-color:#ECFFDC;
+}
+
+#Mindanao img{
+            display:block;
+            width:40%;
+            height:auto%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            background-color:black;
+            padding:5px;
+            border-style: solid;
+            border: 2px;
+            border-radius: 5px;
+}
+
+#Reference{
+       background-color:#EABBB1;
+}
+
+#Video-Gallery{
+    background-color:#EABBB1;
+    height: 100vh:
+}
+
+#Culture img{
+                display:block;
+                width:40%;
+                height:auto%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 50px;
+                background-color:black;
+                padding:5px;
+                border-style: solid;
+                border: 2px;
+                border-radius: 5px;
+}
+
+#login{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255,255,255,0.75)), 
+url("Resource_Image/Login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+}
+
+#contact{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255,255,255,0.75)), 
+url("Resource_Image/Contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+}
+    
+form {border: 3px solid #6ADBD2; postition:flex; background-color: white;}
+
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+          resize: vertical;
+        }
+        
+        select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+        
+        .login{
+          background-color: #04aa46;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+        }
+        
+        .submit{
+          background-color: #04aa46;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 50%;
+        }
+
+        .login:hover {
+          opacity: 0.9;
+        }
+        
+        .submit:hover {
+          opacity: 0.9;
+        }
+
+        .imgholder {
+          text-align: center;
+          margin: 24px 12px;
+        }
+
+        img.avatar {
+          width: 20%;
+          border-radius: 50%;
+        }
+
+        .holder {
+          padding: 13px;
+        }
+
+        span.pw {
+          float: right;
+          padding-top: 0px;
+          margin-bottom: 0px;
+        }
+        
+        .box {
+          border-radius: 5px;
+          margin:20px;
+          background-color: #f2f2f2;
+          padding: 10px;
+        }
+
+        input[type=submit] {
+          background-color: #04AA6D;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+footer{
+    background-color: #AFE1AF;
+    margin:0;
+    padding:5px;
+    display:static;
+    font-family:oswald;
+    height:auto;
+    margin-left: 15%;
+    margin-right: 0px;
+    width: 85%;
+    }
+
+@media (max-width: 750px) {
+    #background-video { display: none; }
+    body {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255,255,255,0.75)), 
+      src("Resource_Image/Preview.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+         }
+    
+    h1.font{font-size:40px; font-family: nerko one;}
+    h1.font2{font-size:30px; font-family: nerko one;}
+    h1.font3{font-size:20px; font-family: nerko one;}
+    h2.font4{text-indent:20px; font-size: 20px; font-family: nerko one;}
+    
+    .fonthead{font-size: 13px; font-family: nerko one;}
+    
+    blockquote{
+    font-family: lato;
+    font-size: 10px;
+    }
+    
+    .quote2{text-indent:20px; font-size: 12px; font-family: oswald;}
+    
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    
+    #Video-Gallery td{display:block;}
+    
+    #Reference{
+       font-size: 6px;
+    }
+    
+    .header-right {
+        float: none;
+    }
+    
+    header{
+        height:70px;
+        padding:10px;
+        width:100%;
+      }
+    
+    .sidebarnav {padding-top: 15px;}
+    .sidebarnav a {font-size: 16px;}
+    
+    .datetime{
+            width: 150px;
+            font-size: 6px;
+            padding: 12px 6px;
+            border: 3px solid #023020;
+            border-radius: 6px;
+         }
+    
+    .holder {
+            font-size:9px;
+        }
+    
+.date{
+        font-weight: 750;
+        text-align:center;
+        letter-spacing: 1px;
+     }
+  
+.time{
+        display:flex;
+        font-size:7px;
+}
+
+.time span:last-child{
+    font-size: 7px;
+    font-weight: 600;
+}
+    
+.sidebarnav {
+    margin-top: 5px;
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    padding-top: 10px;
+}
+
+.sidebarnav a, .dropdown-btn{
+  padding: 6px;
+  font-size: 8px;
+  transition: 0.3s;
+}
+
+.dropdown-container{
+    font-size: 4px;
+}
+
+form {border: 1.5px solid #6ADBD2; postition:flex; background-color: white;}
+
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 6px 10px;
+          margin: 4px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+          resize: vertical;
+        }
+        
+        select, textarea {
+          width: 100%;
+          padding: 6px;
+          border: 1px solid #ccc;
+          border-radius: 2px;
+          box-sizing: border-box;
+          margin-top: 3px;
+          margin-bottom: 8px;
+          resize: vertical;
+        }
+                
+        .submit{
+          background-color: #04aa46;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 50%;
+        }
+
+        .holder {
+          padding: 7px;
+        }
+        
+        .box {
+          border-radius: 2.5px;
+          margin:10px;
+          padding: 5px;
+        }
+
+        input[type=submit] {
+          background-color: #04AA6D;
+          color: white;
+          padding: 6px 10px;
+          border: none;
+          border-radius: 2px;
+          cursor: pointer;
+        }
+        
+footer{ 
+    padding:5px;
+    font-size: 5px;
+    }
+
+.footer_link a{
+    padding-top: 10px;
+    font-size: 8px;
+}
+
+button.menu-drop{
+    font-size: 8px;
+    width: 25%;
+    margin:auto;
+}
+
+.menu-drop-container{
+display:none;
+text-align: center;
+background-color: #90EE90;
+}
+}
+
+/*I cannot put next or closed comments on the css style, it will disable if I do so*/
+/*@media is use for the responsive website*/
+/* all of the other styles are used for designing the html*/
+    
